@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+      Beauty
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+    <body>
+             <center>
+                <h1 class="head">
+                   <strong>rb&#46</strong> 
+                </h1>
+                <h1 class="heading">
+                   R e i n e b e a u t y&#46
+                </h1>
+                <h2 class="slogan">
+                    Hair & Makeup.
+                </h2>
+                <p class="indent">
+                    For your <em>makeup</em> and <em> styling</em> needs&#46
+                </p>
+                
+                <ul class="events">
+                    <li>
+                        Weddings
+                    <br>
+                        Graduations
+                    
+                    <br>
+                        Fashion shoots
+                    <br>
+                        Runway events
+                    <br>
+                        Casual occasionsss
+                    </li>
+                </ul>
+                
+                 <a class="instagram-link" href="https://www.instagram.com/_reinebeauty?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                    <ion-icon name="logo-instagram" size="large"></ion-icon>
+                    Reinebeauty
+                </a>
+                <button class="myButton"> contact us</button>
+              </center>
+             
+               
+            
+                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/799/original/z.jpg?1713625078" alt="full-glam makeup" class="one">
+                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/808/original/fc1b0f7bea90487bfa9db8d46aaf4e83.jpg?1713625441" >
+                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/800/original/q.jpg?1713625094" alt=" hijab-makeup" >
+                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/801/original/OIP.jpg?1713625105"alt="fair-skin makeup">
+                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/802/original/t.jpg?1713625119" alt="old people">
+                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/805/original/lol.jpg?1713625373" alt="hair">
+                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/806/original/why.jpg?1713625383" alt="cornrows">
+                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/803/original/s.png?1713625134" alt="man-makeup">
+                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/804/original/R.jpg?1713625153" alt="man-makeup">
+            <hr style="width: 520px;" >
+            <pre>
+                coded by <span style= "color:whitesmoke" >Banele Makhonjwa</span>
+            </pre>  
+        </div>
+            
+            
+                <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+                <script module src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+                <script>
+                
+                function pressButton() {
+                let name = prompt("What is your name?");  
+                let service = prompt( "Which service do you require (Hair/& Makeup)?");
+                let email =  prompt("what is your email address?");
+                alert("Hello "  +  name  +  ", Thank you for contacting Reinbeauty. We will contact you soon at "+ email + ", mean-while stay Bautiful and look at our instagram for inspiration.");
+            
+                var promptElement = document.querySelector(".slogan");
+                
+                if(service.toLowerCase() === "hair"){
+                    promptElement.innerHTML = "Thank you for booking hair with Reinebeauty.";
+                } else if( service.toLowerCase() === "makeup"){
+                    promptElement.innerHTML = "Thank you for booking makeup with Reinebeauty";
+                 } else{
+                    promptElement.innerHTML = "Thank you for trusting us with your hair and makeup.";
+                }
+    
+         }
+            
+              let myClick = document.querySelector("button");
+              myClick.addEventListener("click", pressButton);
+          
+                    
+                </script>  
+            </body>
+    </html>
